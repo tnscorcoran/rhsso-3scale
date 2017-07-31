@@ -19,7 +19,7 @@ Click *add the base URL of your API and save the Configuration*
 ![add-base-url](https://raw.githubusercontent.com/tnscorcoran/rhsso-3scale/master/02%20Add%20the%20base%20URL%20of%20your%20API.png)  
 Keep *Private Base URL* as it is (or enter your desired API Back end URL).  
 Set your *Staging Public Base URL* and *Production Public Base URL* both to be http:// apicast-rshsso.*rhel-box-ip*.xip.io  
-*Update the Staging Envirnonment*
+Click *Update the Staging Envirnonment*
 ![public-base-urls](https://raw.githubusercontent.com/tnscorcoran/rhsso-3scale/master/03%20Set%20Public%20Base%20URLs.png)
 Set your credentials location to Headers:  
 ![update-credentials-location-headers](https://raw.githubusercontent.com/tnscorcoran/rhsso-3scale/master/03-update-credentials-location-headers.png.png)
