@@ -94,7 +94,7 @@
 			"description": "",
 			"collectionId": "eed2634b-dba0-800c-8542-79b2ed8cf362",
 			"responses": [],
-			"rawModeData": "{ \"clientId\": \"a1d412c2\", \"secret\": \"fe01249f826e4ba7df33c2dd070956e6\",\"redirectUris\":[\"https://www.getpostman.com/oauth2/callback\"] }"
+			"rawModeData": "{ \"clientId\": \"123456\", \"secret\": \"123456123456123456123456\",\"redirectUris\":[\"https://www.getpostman.com/oauth2/callback\"] }"
 		}
 	]
 }
