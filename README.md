@@ -40,6 +40,15 @@ Copy your API Credentials for later. Refered to as
 *client-secret*  
 *redirect-url*  
   
+
+Get your 3scale Access token (used to create gateway). Go to Gear sign - Personal Settings - Tokens  
+![05-threescale-accesstoken-1.png](https://raw.githubusercontent.com/tnscorcoran/rhsso-3scale/master/05-threescale-accesstoken-1.png)
+  
+Add Access token  
+![05-threescale-accesstoken-1.png](https://raw.githubusercontent.com/tnscorcoran/rhsso-3scale/master/05-threescale-accesstoken-2.png)
+  
+Name it, give it read/write access to all scopes and Create Access token. We'll refer to this your *3scale-access-token*   
+![05-threescale-accesstoken-1.png](https://raw.githubusercontent.com/tnscorcoran/rhsso-3scale/master/05-threescale-accesstoken-3.png)
   
 
 2 - Initial Setup of Red Hat Single Sign On
