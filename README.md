@@ -1,4 +1,4 @@
-PreRequisites
+Prerequisites
 ==================================================================================================
 Access to 3scale Account  
 Access to Red Hat SSO On Openshift  
@@ -6,6 +6,7 @@ Your AWS box IP 52.15.120.30
 
 1 - Setup your 3scale Account
 ==================================================================================================
+Go to API - Integration and click *add the base URL of your API and save the Configuration*  
 ![Edit integration settings](https://raw.githubusercontent.com/tnscorcoran/rhsso-3scale/master/01%20edit%20integration%20settings.png)
 For GATEWAY, choose APICast Self Managed. For AUTHENTICATION choose Oauth 2.0.
 Update Service
