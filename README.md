@@ -157,7 +157,7 @@ Login as the user you created in RH SSO (rh-sso-user-id/rh-sso-user-password). (
 After authentication, you'll be prompted to create a new Password. Do this.  
   
 A Token (RHSSO Get Token) will be returned to Postman. Click it then click Use Token.  
-Click Save then click Send.  
+Click Save then click Send. You should get a successful API Response.    
 ![20-use-token-save-send.png](https://raw.githubusercontent.com/tnscorcoran/rhsso-3scale/master/20-use-token-savesend.png)  
 
 Go to your 3scale Analytics. Your counts should increment with each call.
