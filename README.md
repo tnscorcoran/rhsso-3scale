@@ -66,7 +66,7 @@ Save it. Your Initial Access Token will appear. Copy it, you won't be able to re
   
 Create a user on RH SSO. For simplicity I'll refer to as *rh-sso-user-id*.
 ![10-Add-User.png](https://raw.githubusercontent.com/tnscorcoran/rhsso-3scale/master/10-Add-User.png)
-Enter something like the following and Save:
+Enter your equivalents to the following and Save:
 ![11-add-user-initial-details.png](https://raw.githubusercontent.com/tnscorcoran/rhsso-3scale/master/11-add-user-initial-details.png)
 On the Credentials tab, add New Password and Password Confirmation and reset. I'll refer to it as rh-sso-user-password
 ![12-add-credentials.png](https://raw.githubusercontent.com/tnscorcoran/rhsso-3scale/master/12-add-credentials.png)
