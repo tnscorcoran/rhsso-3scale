@@ -208,7 +208,7 @@ Bind Credential			*ldap-password*
   
 ![22-sample-ldap-settings.png](https://raw.githubusercontent.com/tnscorcoran/rhsso-3scale/master/22-sample-ldap-settingz.png)  
   
-Retest auth flow and API with token In Postman - this time using credentials stored on LDAP  
+Retest OAuth flow and API with token In Postman - this time using credentials stored on LDAP  
   
   
   
