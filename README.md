@@ -245,20 +245,16 @@ Test it out. Go to Developer Portal -> (in a new Incognito Window) Right click V
 ![27-dev-portal-visit-dev-portal.png](https://raw.githubusercontent.com/tnscorcoran/rhsso-3scale/master/27-dev-portal-visit-dev-portl.png)  
   
   
-Sign In  
-Authenticate with Red Hat SSO  
- 	rh-sso-ldap-user-id or rh-sso-user-id  
-Add Custom signup fields  
-Close window  
-
-3scale Admin
-- Activate Request
-
-new	INCOGNITO WINDOW 
-- https://tnscorcoran.3scale.net
-- Sign In 
-- Authenticate with Red Hat SSO
-Test it out. Go to Developer Portal -> (in a new Incognito Window) Visit Developer Portal  
+Click Sign In  
+Authenticate with Red Hat SSO. Use either *rh-sso-ldap-user-id* or *rh-sso-user-id* 
 ![28-auth-dev-portal-with-rhsso](https://raw.githubusercontent.com/tnscorcoran/rhsso-3scale/master/28-auth-dev-portal-with-rhsso.png)  
 
+After logging in you'll be prompted to add Custom signup fields. Do this and follow the sequence to completion.
+Close window  
 
+Now as your 3scale Admin user, activate this Signup Request:  
+  
+![28-auth-dev-portal-with-rhsso.png](https://raw.githubusercontent.com/tnscorcoran/rhsso-3scale/master/28-auth-dev-portal-with-rhsso.png)    
+  
+
+Dev Portal signup is now complete.
