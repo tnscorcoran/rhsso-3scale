@@ -25,7 +25,7 @@ Set your credentials location to Headers:
 ![update-credentials-location-headers](https://raw.githubusercontent.com/tnscorcoran/rhsso-3scale/master/03-update-credentials-location-headers.png)
   
 Go to API -> Integration. Click Promote v._x_ to Production
-![promote-to-production](https://raw.githubusercontent.com/tnscorcoran/rhsso-3scale/master/03-promote-to-production.png)
+![promote-to-production](https://raw.githubusercontent.com/tnscorcoran/rhsso-3scale/master/03-promote-to-prod.png)
 
 Open your only Application (or choose one in your Oauth API if you have more)
 ![set-application-details](https://raw.githubusercontent.com/tnscorcoran/rhsso-3scale/master/04-set%20your-3scale%20application-details.png)
