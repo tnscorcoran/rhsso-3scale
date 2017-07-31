@@ -257,4 +257,4 @@ Now as your 3scale Admin user, activate this Signup Request. Go to your Develope
 ![29-activate-signup-request](https://raw.githubusercontent.com/tnscorcoran/rhsso-3scale/master/29-activate-signup-request.png)    
   
 
-Dev Portal signup is now complete.
+Dev Portal signup is now complete and your Dev portal user can sign in with credentials stored in Red Hat SSO or an LDAP it brokers to.
