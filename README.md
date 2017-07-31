@@ -20,8 +20,8 @@ Keep *Private Base URL* as it is.
 Set your *Staging Public Base URL* and *Production Public Base URL* both to be http://apicast-rshsso.52.15.120.30.xip.io  
 Update the Staging Envirnonment  
 ![](https://raw.githubusercontent.com/tnscorcoran/rhsso-3scale/master/03%20Set%20Public%20Base%20URLs.png)
-Set your credentials location to Headers:
-[3-update-credentials-location-headers.png]
+Set your credentials location to Headers:  
+![](https://raw.githubusercontent.com/tnscorcoran/rhsso-3scale/master/03-update-credentials-location-headers.png.png)
   
 Go to API -> Integration. Click Promote v.<x> to Production
 [3-promote-to-production.png]
