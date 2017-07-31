@@ -193,19 +193,19 @@ Go to: User Federation -> Add Provider -> ldap
 
 Enter the following, testing connection and authentication as you go then Save:
 --------------------
-Console Display Name:	open-ldap
-Priority				1
-Edit Mode				Read Only
-Vendor					Active Directory
-UUID LDAP attribute		entryUUID
-User Object Classes		shadowaccount, posixaccount
-Connection URL			ldap://*ldap-url*:389
-	***test it
-Users DN				ou=people,dc=example,dc=com
-Authentication Type		Simple
-Bind DN					cn=admin,dc=example,dc=com
-Bind Credential			*ldap-password*
-
+Console Display Name:	open-ldap  
+Priority				1  
+Edit Mode				Read Only  
+Vendor					Active Directory  
+UUID LDAP attribute		entryUUID  
+User Object Classes		shadowaccount, posixaccount  
+Connection URL			ldap://*ldap-url*:389  
+	***test it  
+Users DN				ou=people,dc=example,dc=com  
+Authentication Type		Simple  
+Bind DN					cn=admin,dc=example,dc=com  
+Bind Credential			*ldap-password*  
+  
 ![22-sample-ldap-settings.png](https://raw.githubusercontent.com/tnscorcoran/rhsso-3scale/master/22-sample-ldap-settingz.png)  
   
 Retest auth flow and API with token In Postman - this time using credentials stored on LDAP  
