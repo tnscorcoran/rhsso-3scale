@@ -126,7 +126,7 @@ Your gateway will deploy in a couple of minutes.
   
 Open web Console https:// *openshift-host* :8443 and open 3scalegateway-**_3scale-oauth-realm_**  
 Go to Applications -> Deployments -> apicast -> Environment  
-Add this ENV variable: RHSSO_ENDPOINT and set it to: http://sso-rhsso.*rhel-box-ip*.xip.io/auth/realms/**_3scale-oauth-realm_**  
+Add this ENV variable: RHSSO_ENDPOINT and set it to: http:// sso-rhsso.*rhel-box-ip*.xip.io/auth/realms/**_3scale-oauth-realm_**  
 Save  
   
 On Openshift web Console ->  Overview -> Create Route. 
