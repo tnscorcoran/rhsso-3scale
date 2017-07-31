@@ -220,7 +220,7 @@ Click on Red Hat Single Sign On. Enter the following (or your desired values)
 **Client**			3scale-dev-portal-client  
 **Client secret**	3scale-dev-portal-client-secret  
 **Realm**			http://sso-rhsso.*rhel-box-ip*.xip.io/auth/realms/**_3scale-oauth-realm_**  
-![24-3scale-dev-portal-credentials.png](https://raw.githubusercontent.com/tnscorcoran/rhsso-3scale/master/24-3scale-dev-portal-credentials.png)  
+![24-3scale-dev-portal-credentials.png](https://raw.githubusercontent.com/tnscorcoran/rhsso-3scale/master/24-3scale-dev-portal-credentialz.png)  
   
   
 While we're in 3scale we're going to remove the secret access key for easier access (for illustration only - we would normally keep it there until  our Dev Portal is ready to go live)  
