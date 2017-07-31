@@ -42,7 +42,7 @@ Copy your API Credentials for later. Refered to as
   
   
 
-2 - Initial Setup Red Hat Single Sign On
+2 - Initial Setup of Red Hat Single Sign On
 ==================================================================================================
 Login to Master  
 Create a Realm for 3scale Oauth. Name it. We'll refer to it as **_3scale-oauth-realm_** 
