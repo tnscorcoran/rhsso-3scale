@@ -16,9 +16,9 @@ For GATEWAY, *choose APICast Self Managed*. For AUTHENTICATION choose *Oauth 2.0
   
 Click *add the base URL of your API and save the Configuration*  
 ![](https://raw.githubusercontent.com/tnscorcoran/rhsso-3scale/master/02%20Add%20the%20base%20URL%20of%20your%20API.png)  
-Keep *Private Base URL* as it is
-Set your *Staging Public Base URL* and *Production Public Base URL* both to be http://apicast-rshsso.52.15.120.30.xip.io
-Update the Staging Envirnonment
+Keep *Private Base URL* as it is.  
+Set your *Staging Public Base URL* and *Production Public Base URL* both to be http://apicast-rshsso.52.15.120.30.xip.io  
+Update the Staging Envirnonment  
 ![](https://raw.githubusercontent.com/tnscorcoran/rhsso-3scale/master/03%20Set%20Public%20Base%20URLs.png)
 Set your credentials location to Headers:
 [3-update-credentials-location-headers.png]
