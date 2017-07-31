@@ -56,11 +56,11 @@ Relax SSL only requirement (for a POC, never in production). As shown under the 
   
   
 Choose Initial Access Token (this is a token we will use for a Red Hat SSO API call shortly)  
-![initial-access-token](https://raw.githubusercontent.com/tnscorcoran/rhsso-3scale/master/08-create-initial-access-token.png)
+![initial-access-token](https://raw.githubusercontent.com/tnscorcoran/rhsso-3scale/master/08-create-initial-access-tkn.png)
   
 
 Set your expiration and count to be non zero values. 
-![9-set-expiration-and-count-999.png]()  
+![9-set-expiration-and-count-999.png](https://raw.githubusercontent.com/tnscorcoran/rhsso-3scale/master/09-set-expiration-and-count-999.png)  
 Save it. Your Initial Access Token will appear. Copy it, you won't be able to retrieve it again. We'll refer to it as your *initial-access-token*
   
   
