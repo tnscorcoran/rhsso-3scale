@@ -5,6 +5,9 @@ Access to a Red Hat SSO installation
 An API client. We assume it to be Postman client for Chrome  
 Your RHEL box IP, refered to *rhel-box-ip*  
   
+
+Note: We have inserted whitespace in some URLs as they contain placeholders and are not valid URLs as they appear. Insert the values resolving to the URL fragments and remove whitespace.  
+
 1 - Setup your 3scale Account
 ==================================================================================================
 Go to API - Integration and click *edit integration settings*  
@@ -113,7 +116,7 @@ oc login
 Create your project, e.g. with something like these values:  
 oc new-project "3scalegateway-**_3scale-oauth-realm_**" --display-name="3scalegateway-**_3scale-oauth-realm_**" --description="3scalegateway-**_3scale-oauth-realm_**"  
   
-oc secret new-basicauth apicast-configuration-url-secret --password=https://9800f60ff34d25e7bc5b22c25287e94da130f6fb0fe9b77c05bd6a6d993b0614@**_3scale-oauth-realm_**-admin.3scale.net  
+oc secret new-basicauth apicast-configuration-url-secret --password=https:// *3scale-access-token* @ **_3scale-oauth-realm_**-admin.3scale.net (remove whitespace)  
   
 oc new-app -f https://raw.githubusercontent.com/3scale/3scale-amp-openshift-templates/2.0.0.GA-redhat-2/apicast-gateway/apicast.yml  
   
