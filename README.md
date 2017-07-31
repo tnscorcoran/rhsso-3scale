@@ -219,7 +219,7 @@ In 3scale, go to Settings -> Developer Portal -> SSO Integrations.
 Click on Red Hat Single Sign On. Enter the following (or your desired values)  
 **Client:**			3scale-dev-portal-client  
 **Client secret:**	3scale-dev-portal-client-secret  
-**Realm**			http://sso-rhsso.*rhel-box-ip*.xip.io/auth/realms/**_3scale-oauth-realm_**  
+**Realm:**			http:// sso-rhsso.*rhel-box-ip*.xip.io/auth/realms/**_3scale-oauth-realm_**  
 ![24-3scale-dev-portal-credentials.png](https://raw.githubusercontent.com/tnscorcoran/rhsso-3scale/master/24-3scale-dev-portal-credentialz.png)  
   
   
