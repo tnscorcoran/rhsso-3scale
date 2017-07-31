@@ -26,9 +26,12 @@ Set your credentials location to Headers:
   
 Go to API -> Integration. Click Promote v._x_ to Production
 ![promote-to-production](https://raw.githubusercontent.com/tnscorcoran/rhsso-3scale/master/03-promote-to-prod.png)
+  
+Choose Developers - Account Developer - 1 Application  
+![developer-application](https://raw.githubusercontent.com/tnscorcoran/rhsso-3scale/master/04-open-developer-application.png)
 
 Open your only Application (or choose one in your Oauth API if you have more)
-![set-application-details](https://raw.githubusercontent.com/tnscorcoran/rhsso-3scale/master/04-set%20your-3scale%20application-details.png)
+![set-application-details](https://raw.githubusercontent.com/tnscorcoran/rhsso-3scale/master/04-set%20your-3scale%20app-details.png)
 Add Random Key
 Set your Redirect URL to be https://www.getpostman.com/oauth2/callback
 ![application-details](https://raw.githubusercontent.com/tnscorcoran/rhsso-3scale/master/05-get-your-3scale%20application-details.png)
