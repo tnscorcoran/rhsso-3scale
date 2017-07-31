@@ -186,7 +186,7 @@ Back in jwt.io, paste this into the Public Key or Certificate box on the right a
 Alter either the payload or the public key and signature validation will fail. This simulates the signature validation that hapeens on the gateway.
   
   
-8 - Setup LDAP (if you don't have set one up using Open LDAP for example)
+8 - Setup LDAP (if you don't have one, setup a test one using Open LDAP)
 ==================================================================================================
 Go to: User Federation -> Add Provider -> ldap
 ![22-choose-ldap.png](https://raw.githubusercontent.com/tnscorcoran/rhsso-3scale/master/22-choose-ldap.png)
