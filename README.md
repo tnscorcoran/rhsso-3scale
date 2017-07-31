@@ -1,7 +1,6 @@
 # Integrating Red Hat 3scale with Red Hat Single Sign On (SSO)
 
 ## Prerequisites
-==================================================================================================
 Access to a 3scale Account  
 Access to a Red Hat SSO installation  
 An API client. We assume it to be Postman client for Chrome  
