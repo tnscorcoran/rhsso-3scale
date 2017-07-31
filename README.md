@@ -96,79 +96,82 @@ Login to Openshift and make the following commands
 oc login 
 	(default credentials are developer/developer)  
 Create your project, e.g. with something like these values:  
-oc new-project "3scalegateway-**_3scale-oauth-realm_**" --display-name="3scalegateway-**_3scale-oauth-realm_**" --description="3scalegateway-**_3scale-oauth-realm_**"
-
-oc secret new-basicauth apicast-configuration-url-secret --password=https://9800f60ff34d25e7bc5b22c25287e94da130f6fb0fe9b77c05bd6a6d993b0614@**_3scale-oauth-realm_**-admin.3scale.net
-
-oc new-app -f https://raw.githubusercontent.com/3scale/3scale-amp-openshift-templates/2.0.0.GA-redhat-2/apicast-gateway/apicast.yml
-
-Your gateway will deploy in a couple of minutes.
-**TIP** Scale it down to 1 Pod - that way if you want to look up logs, they can only be in the remaining Pod.
-
-Open web Console https://ec2-52-15-120-30.us-east-2.compute.amazonaws.com:8443 and open 3scalegateway-**_3scale-oauth-realm_**
-Go to Applications -> Deployments -> apicast -> Environment 
-Add this ENV variable: RHSSO_ENDPOINT and set it to: http://sso-rhsso.*rhel-box-ip*.xip.io/auth/realms/**_3scale-oauth-realm_**
-Save
-
+oc new-project "3scalegateway-**_3scale-oauth-realm_**" --display-name="3scalegateway-**_3scale-oauth-realm_**" --description="3scalegateway-**_3scale-oauth-realm_**"  
+  
+oc secret new-basicauth apicast-configuration-url-secret --password=https://9800f60ff34d25e7bc5b22c25287e94da130f6fb0fe9b77c05bd6a6d993b0614@**_3scale-oauth-realm_**-admin.3scale.net  
+  
+oc new-app -f https://raw.githubusercontent.com/3scale/3scale-amp-openshift-templates/2.0.0.GA-redhat-2/apicast-gateway/apicast.yml  
+  
+Your gateway will deploy in a couple of minutes.  
+**TIP** Scale it down to 1 Pod - that way if you want to look up logs, they can only be in the remaining Pod.  
+  
+Open web Console https://ec2-52-15-120-30.us-east-2.compute.amazonaws.com:8443 and open 3scalegateway-**_3scale-oauth-realm_**  
+Go to Applications -> Deployments -> apicast -> Environment  
+Add this ENV variable: RHSSO_ENDPOINT and set it to: http://sso-rhsso.*rhel-box-ip*.xip.io/auth/realms/**_3scale-oauth-realm_**  
+Save  
+  
 On Openshift web Console ->  Overview -> Create Route. 
-Name: 		apicast-rshsso-route
-Hostname:	apicast-rshsso.*rhel-box-ip*.xip.io
-Leave the rest of the defaults and click Create
-[15-create-route.png]
-
-
-In Postman test Oauth flow and API with token
-==================================================================================================
-Open Echo Hello. Set your GET URL to be http://apicast-rshsso.*rhel-box-ip*.xip.io/hello
-[16-echo-hello-request.png]
+Name: 		apicast-rshsso-route  
+Hostname:	apicast-rshsso.*rhel-box-ip*.xip.io  
+Leave the rest of the defaults and click Create  
+![15-create-route.png](https://raw.githubusercontent.com/tnscorcoran/rhsso-3scale/master/15-create-route.png)  
+  
+  
+In Postman test Oauth flow and API with token  
+==================================================================================================  
+Open Echo Hello. Set your GET URL to be http://apicast-rshsso.*rhel-box-ip*.xip.io/hello  
+![16-echo-hello-request.png](https://raw.githubusercontent.com/tnscorcoran/rhsso-3scale/master/16-echo-hello-request.png)  
 
 Choose Type -> Oauth 2.0
-[17-type-Oauth2.0.png]
-
-Set these parameters and 
-Click Get New Access Token orange button
-Auth URL:			http://apicast-rshsso.*rhel-box-ip*.xip.io/authorize
-Access Token URL:	http://apicast-rshsso.*rhel-box-ip*.xip.io/oauth/token
-Client ID 			*client-id*
-Client Secret 		*client-secret*
-[18-Postman-Request-token.png]
-
-Login as the user you created in RH SSO (rh-sso-user-id/rh-sso-user-password). (styling is always missing so ignore for now)
-[19-login-as-your-user.png]
-After authentication, you'll be prompted to create a new Password. Do this.
-
-A Token (RHSSO Get Token) will be returned to Postman. Click it then click Use Token.
-Click Save then click Send.
-[20-use-token-save-send.png]
+![17-type-Oauth2.0.png](https://raw.githubusercontent.com/tnscorcoran/rhsso-3scale/master/17-type-Oauth2.0.png)  
+  
+Set these parameters and  
+Click Get New Access Token orange button  
+Auth URL:			http://apicast-rshsso.*rhel-box-ip*.xip.io/authorize  
+Access Token URL:	http://apicast-rshsso.*rhel-box-ip*.xip.io/oauth/token  
+Client ID 			*client-id*  
+Client Secret 		*client-secret*  
+![18-Postman-Request-token.png](https://raw.githubusercontent.com/tnscorcoran/rhsso-3scale/master/18-Postman-Request-token.png)  
+  
+Login as the user you created in RH SSO (rh-sso-user-id/rh-sso-user-password). (styling is always missing so ignore for now)  
+![19-login-as-your-user.png](https://raw.githubusercontent.com/tnscorcoran/rhsso-3scale/master/19-login-as-your-user.png)  
+After authentication, you'll be prompted to create a new Password. Do this.  
+  
+A Token (RHSSO Get Token) will be returned to Postman. Click it then click Use Token.  
+Click Save then click Send.  
+![20-use-token-save-send.png](https://raw.githubusercontent.com/tnscorcoran/rhsso-3scale/master/20-use-token-save-send.png)  
 
 Go to your 3scale Analytics. Your counts should increment with each call.
+![3scale-analytics](https://raw.githubusercontent.com/tnscorcoran/rhsso-3scale/master/21-3scale-analytics.png)  
+  
+  
+Return to postman and insert a random characted into the JWT and Use Token and repeat. Authorization should fail.
+  
+  
 
-Insert a random characted into the JWT and Use Token and repeat. Authorization should fail.
-
-
-NICE TO DEMO: Test your JWT on JWT.io
-==================================================================================================
-Go to JWT.io
-Paste into the Encoded box on the left the JWT that got inserted into the Bearer token Authorization Header after you selected Use Token.
-On the right, you'll see some payload data representing the user and client.
-
-Go to Red Hat SSO -> Realm Settings -> Keys			
-Copy the Public Key 
-[21-get-public-key.png]
-(insert JWT here - between -----BEGIN PUBLIC KEY----- and -----END PUBLIC KEY-----) 	
+NICE TO DEMO: Test your JWT on JWT.io  
+==================================================================================================  
+Go to JWT.io  
+Paste into the Encoded box on the left the JWT that got inserted into the Bearer token Authorization Header after you selected Use Token.  
+On the right, you'll see some payload data representing the user and client.  
+  
+Go to Red Hat SSO -> Realm Settings -> Keys  
+Copy the Public Key  
+![21-get-public-key.png](https://raw.githubusercontent.com/tnscorcoran/rhsso-3scale/master/21-get-public-key.png)
+Insert Public Key as follows:  
 -----BEGIN PUBLIC KEY-----
-MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAxlgJ4D/Wo5gPAzoNiihZ3mQsMLELx1yhZUCsvmeP2DJbIlCHSOGdVz8m/XVsxeA1B90mYE79i/UD1ZVUYEZgFZNB5b5AQE2veQfnnrOLqCkRbtOEMRoLuQIOLt5/Hf/xeGv3iuL/PvZs/pVDTa1Dkr0fFLjNAcHeDH9p3XR5JQuvokv6nnh8QXnOYPRKSE4f5pvlN1HfKK0AIrHihBegOHYu7MOWF06FaYvTdQozjXEALNebqKxBVbF7+aFz43GCRVWqcYcY88dlfHhuCd/7kaXHr6Ib6bTZYvktOJSHw05GwuVwhS23b8t0UoLal4Xvq3Vv2JgwV66Vz4jAbyKG1wIDAQAB
+**_public key goes here_**
 -----END PUBLIC KEY-----
 			
-Paste this into the Public Key or Certificate box on the right and the red Invalid Signature banner should turn to a blue Signature verified one.
-Alter either the payload or the public key and signature should fail. This simulates the signature validion that hapeens on the gateway.
-
-
+Paste this into the Public Key or Certificate box on the right and the red Invalid Signature banner should turn to a blue *Signature verified* one.
+Alter either the payload or the public key and signature validation will fail. This simulates the signature validation that hapeens on the gateway.
+  
+  
 Setup LDAP (if you don't have set one up using Open LDAP for example)
 Anand and Kavitha, THESE CREDENTIALS WILL BE REMOVED WHEN GIST IS TESTED
 ==================================================================================================
 Go to: User Federation -> Add Provider -> ldap
-[22-choose-ldap.png]
+![22-choose-ldap.png](https://raw.githubusercontent.com/tnscorcoran/rhsso-3scale/master/22-choose-ldap.png)
 
 Enter the following, testing connection and authentication as you go then Save:
 --------------------
@@ -178,14 +181,14 @@ Edit Mode				Read Only
 Vendor					Active Directory
 UUID LDAP attribute		entryUUID
 User Object Classes		shadowaccount, posixaccount
-Connection URL			ldap://ec2-107-22-51-90.compute-1.amazonaws.com:389
+Connection URL			ldap://*ldap-url*:389
 	***test it
 Users DN				ou=people,dc=example,dc=com
 Authentication Type		Simple
 Bind DN					cn=admin,dc=example,dc=com
-Bind Credential			admin123
+Bind Credential			*ldap-password*
 
-[22-sample-ldap-settings.png]
+![22-sample-ldap-settings.png](https://raw.githubusercontent.com/tnscorcoran/rhsso-3scale/master/22-sample-ldap-settings.png)
 
 Retest auth flow and API with token In Postman - this time using credentials stored on LDAP
 
