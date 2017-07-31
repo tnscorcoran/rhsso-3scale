@@ -1,7 +1,7 @@
 Prerequisites
 ==================================================================================================
-Access to 3scale Account  
-Access to Red Hat SSO On Openshift  
+Access to a 3scale Account  
+Access to a Red Hat SSO installation  
 An API client. We assume it to be Postman client for Chrome  
 Your RHEL box IP, refered to *rhel-box-ip*  
   
@@ -19,7 +19,7 @@ Click *add the base URL of your API and save the Configuration*
 ![add-base-url](https://raw.githubusercontent.com/tnscorcoran/rhsso-3scale/master/02%20Add%20the%20base%20URL%20of%20your%20API.png)  
 Keep *Private Base URL* as it is.  
 Set your *Staging Public Base URL* and *Production Public Base URL* both to be http:// apicast-rshsso.*rhel-box-ip*.xip.io  
-Update the Staging Envirnonment  
+*Update the Staging Envirnonment  *
 ![public-base-urls](https://raw.githubusercontent.com/tnscorcoran/rhsso-3scale/master/03%20Set%20Public%20Base%20URLs.png)
 Set your credentials location to Headers:  
 ![update-credentials-location-headers](https://raw.githubusercontent.com/tnscorcoran/rhsso-3scale/master/03-update-credentials-location-headers.png.png)
@@ -39,7 +39,7 @@ Copy your API Credentials for later. Refered to as
   
   
 
-2 Initial Setup Red Hat Single Sign On
+2 - Initial Setup Red Hat Single Sign On
 ==================================================================================================
 Login to Master  
 Create a Realm for 3scale Oauth. Name it. We'll refer to it as **_3scale-oauth-realm_** 
@@ -69,7 +69,7 @@ On the Credentials tab, add New Password and Password Confirmation and reset. I'
 ![12-add-credentials.png](https://raw.githubusercontent.com/tnscorcoran/rhsso-3scale/master/12-add-credentials.png)
   
   
-Use Postman to create client on Red Hat Single Sign On
+3 - Use Postman to create client on Red Hat Single Sign On
 ==================================================================================================
 In Postman, import the postman JSON *RHSSO_3scaleGist.postman_collection.json* in this repo.
 Open RH SSO Add Client request add client to Red Hat SSO (Client credentials on RHSSO need to be the same as Application Credentials set on 3scale above)
@@ -83,14 +83,14 @@ Save and Send it. You should get back some JSON and 201 created HTTP status.
   
 
 
-2 Check and Update your Client in Red Hat SSO  
+4 - Check and Update your Client in Red Hat SSO  
 ==================================================================================================
 In Red Hat SSO, click on the Clients view on the Left hand side. Select your new client (*client-id*)  
 Assuming you want to give the user ability to grant access to the Application to access their data (we do), click Consent Required. Save  
 ![14-update-client-in-rhsso.png](https://raw.githubusercontent.com/tnscorcoran/rhsso-3scale/master/14-update-client-in-rhsso.png)  
   
   
-Setup your API Gateway on Openshift  
+5 - Setup your API Gateway on Openshift  
 ==================================================================================================
 Login to Openshift and make the following commands
 oc login 
@@ -117,7 +117,7 @@ Leave the rest of the defaults and click Create
 ![15-create-route.png](https://raw.githubusercontent.com/tnscorcoran/rhsso-3scale/master/15-create-route.png)  
   
   
-In Postman test Oauth flow and API with token  
+6 - In Postman test Oauth flow and API with token  
 ==================================================================================================  
 Open Echo Hello. Set your GET URL to be http://apicast-rshsso.*rhel-box-ip*.xip.io/hello  
 ![16-echo-hello-request.png](https://raw.githubusercontent.com/tnscorcoran/rhsso-3scale/master/16-echo-hello-request.png)  
@@ -149,7 +149,7 @@ Return to postman and insert a random characted into the JWT and Use Token and r
   
   
 
-NICE TO DEMO: Test your JWT on JWT.io  
+7 - Test your JWT on JWT.io (optional)  
 ==================================================================================================  
 Go to JWT.io  
 Paste into the Encoded box on the left the JWT that got inserted into the Bearer token Authorization Header after you selected Use Token.  
@@ -167,8 +167,7 @@ Paste this into the Public Key or Certificate box on the right and the red Inval
 Alter either the payload or the public key and signature validation will fail. This simulates the signature validation that hapeens on the gateway.
   
   
-Setup LDAP (if you don't have set one up using Open LDAP for example)
-Anand and Kavitha, THESE CREDENTIALS WILL BE REMOVED WHEN GIST IS TESTED
+8 - Setup LDAP (if you don't have set one up using Open LDAP for example)
 ==================================================================================================
 Go to: User Federation -> Add Provider -> ldap
 ![22-choose-ldap.png](https://raw.githubusercontent.com/tnscorcoran/rhsso-3scale/master/22-choose-ldap.png)
@@ -194,7 +193,7 @@ Retest auth flow and API with token In Postman - this time using credentials sto
   
   
   
-SSO into Dev Portal (based on https://support.3scale.net/docs/developer-portal/authentication#rhsso)
+9 - SSO into Dev Portal (based on https://support.3scale.net/docs/developer-portal/authentication#rhsso)
 ==================================================================================================
 In 3scale, go to Settings -> Developer Portal -> SSO Integrations.  
 ![23-settings-dev-portal-sso.png](https://raw.githubusercontent.com/tnscorcoran/rhsso-3scale/master/23-settings-dev-portal-sso.png)  
