@@ -1,6 +1,6 @@
 # Integrating Red Hat 3scale with Red Hat Single Sign On (SSO)
 
-Prerequisites
+## Prerequisites
 ==================================================================================================
 Access to a 3scale Account  
 Access to a Red Hat SSO installation  
