@@ -1,0 +1,100 @@
+{
+	"id": "eed2634b-dba0-800c-8542-79b2ed8cf362",
+	"name": "RHSSO_3scaleGist",
+	"description": "",
+	"order": [
+		"221c9d05-54cd-8f0c-7104-ddf936d92d04",
+		"24456cb5-4b3e-307d-ed04-59d84ebd8e0a"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1501139547272,
+	"owner": "205277",
+	"public": false,
+	"requests": [
+		{
+			"id": "221c9d05-54cd-8f0c-7104-ddf936d92d04",
+			"headers": "Content-Type: application/json\nAccept: application/json\nAuthorization: Bearer eyJhbGciOiJSUzI1NiJ9.eyJqdGkiOiIzZmYyMjk1ZS1mOTBiLTQwZjQtYTRhNC0yN2IxYzJhYWI0YzQiLCJleHAiOjE1ODc0NTYxNDcsIm5iZiI6MCwiaWF0IjoxNTAxMTQyNTQ3LCJpc3MiOiJodHRwOi8vc3NvLXJoc3NvLjUyLjE1LjEyMC4zMC54aXAuaW8vYXV0aC9yZWFsbXMvdG9tLW9hdXRoLTEiLCJhdWQiOiJodHRwOi8vc3NvLXJoc3NvLjUyLjE1LjEyMC4zMC54aXAuaW8vYXV0aC9yZWFsbXMvdG9tLW9hdXRoLTEiLCJ0eXAiOiJJbml0aWFsQWNjZXNzVG9rZW4ifQ.hV5wKhCK6Db3QzB25kXsNtiLmQxeFwmcN3jmjuMRe_EArJ7D7T3RWJyBpJNBnVJOmW43ii7lQjAQ1YjnUqOVURH09uR6KB8iq5ZiSmi6A2ZZkokKxuQyVt_eKuOI4yI8f9aNp8HOjwSoitFUf0RRhtCdx66Axm2psKbjFMJEP5ponLsKsM2_HBnWb2vYbdGxvBtA0tRNDzZcqzTqg2pF0h8yxuOCAMtw5KVo_hunZKx1m0PBFMbivQzUJi4zeyG1pEHrogc5HVzjM54-K6HQbX-7xK902kgHdspjVUvCgAaE3mPGIc0XB4oOJcjD7loKZevmkjSgbszc1op_1S5Cog\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJhbGciOiJSUzI1NiJ9.eyJqdGkiOiIzZmYyMjk1ZS1mOTBiLTQwZjQtYTRhNC0yN2IxYzJhYWI0YzQiLCJleHAiOjE1ODc0NTYxNDcsIm5iZiI6MCwiaWF0IjoxNTAxMTQyNTQ3LCJpc3MiOiJodHRwOi8vc3NvLXJoc3NvLjUyLjE1LjEyMC4zMC54aXAuaW8vYXV0aC9yZWFsbXMvdG9tLW9hdXRoLTEiLCJhdWQiOiJodHRwOi8vc3NvLXJoc3NvLjUyLjE1LjEyMC4zMC54aXAuaW8vYXV0aC9yZWFsbXMvdG9tLW9hdXRoLTEiLCJ0eXAiOiJJbml0aWFsQWNjZXNzVG9rZW4ifQ.hV5wKhCK6Db3QzB25kXsNtiLmQxeFwmcN3jmjuMRe_EArJ7D7T3RWJyBpJNBnVJOmW43ii7lQjAQ1YjnUqOVURH09uR6KB8iq5ZiSmi6A2ZZkokKxuQyVt_eKuOI4yI8f9aNp8HOjwSoitFUf0RRhtCdx66Axm2psKbjFMJEP5ponLsKsM2_HBnWb2vYbdGxvBtA0tRNDzZcqzTqg2pF0h8yxuOCAMtw5KVo_hunZKx1m0PBFMbivQzUJi4zeyG1pEHrogc5HVzjM54-K6HQbX-7xK902kgHdspjVUvCgAaE3mPGIc0XB4oOJcjD7loKZevmkjSgbszc1op_1S5Cog",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://sso-rhsso.52.15.120.30.xip.io/auth/realms/tom-oauth-1/clients-registrations/default",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1501144526531,
+			"name": "RH SSO Add Client",
+			"description": "",
+			"collectionId": "eed2634b-dba0-800c-8542-79b2ed8cf362",
+			"responses": [],
+			"rawModeData": "{ \"clientId\": \"64395f57\", \"secret\": \"82bd69b6324418ad8926ebdfde980fdc\",\"redirectUris\":[\"https://www.getpostman.com/oauth2/callback\"] }"
+		},
+		{
+			"id": "24456cb5-4b3e-307d-ed04-59d84ebd8e0a",
+			"headers": "Authorization: Bearer eyJhbGciOiJSUzI1NiJ9.eyJqdGkiOiI0ZDI5NTliMS0zZWVkLTQxNzYtOWExNS1kZjY4NjgxMmJmYWMiLCJleHAiOjE1MDExNTE2MjYsIm5iZiI6MCwiaWF0IjoxNTAxMTUxMzI2LCJpc3MiOiJodHRwOi8vc3NvLXJoc3NvLjUyLjE1LjEyMC4zMC54aXAuaW8vYXV0aC9yZWFsbXMvdG9tLW9hdXRoLTEiLCJhdWQiOiI2M2UzZjhjOSIsInN1YiI6IjExNzQ3NmU4LTM3NjktNGI3Ny1iNjU0LTMxZWIwMzE0MjYyNiIsInR5cCI6IkJlYXJlciIsImF6cCI6IjYzZTNmOGM5Iiwic2Vzc2lvbl9zdGF0ZSI6IjE0ZGRjNzA3LWFmZmEtNDllMi04OTIwLTU2MmU1Mjg5YTQ1ZCIsImNsaWVudF9zZXNzaW9uIjoiMjgxMjEwNDgtZmEwZS00MjlhLWE5YzctZWJlNjQ2ZTdkMmMyIiwiYWxsb3dlZC1vcmlnaW5zIjpbImh0dHBzOi8vd3d3LmdldHBvc3RtYW4uY29tIl0sInJlc291cmNlX2FjY2VzcyI6eyJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50Iiwidmlldy1wcm9maWxlIl19fSwibmFtZSI6IkNhbCBDbGllbnQiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJjYWwtY2xpZW50IiwiZ2l2ZW5fbmFtZSI6IkNhbCIsImZhbWlseV9uYW1lIjoiQ2xpZW50IiwiZW1haWwiOiJjYWwtY2xpZW50QGdtYWlsLmNvbSJ9.cshI5hhtkJ6Ne8ncXpin875IWqY2YNI_C1GbtB2F8HQ-0Pj4U8PGOMdJTicenANsDZMmaTb-v-dzioWiUn7BuLt3ynxuAF_-m4iLT6R1os4YDmJSKeP7OqoSI-zgqtLSgK3GmiZv31-hdPe4Xx_ydcR8RLZsH9s2Hxm4Cy5sMS2Z5gzrizvZMBpVlZ8OnKk9SY64cjfghW4MdLUcbByP3gToHD9ecQFG-7bkql6L5dEWv8qIU9Vm1AsHi12bFIlM5BtxAHBN1sj2mBsZN1GczEZide2moHpuR9BK2EjQFTcA0FCWmW6NOZtlsG1Y_h7h8JKlwMZHuvPKDwFJLaN6ZQ\nContent-Type: application/json\nAccept: application/json\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJhbGciOiJSUzI1NiJ9.eyJqdGkiOiI0ZDI5NTliMS0zZWVkLTQxNzYtOWExNS1kZjY4NjgxMmJmYWMiLCJleHAiOjE1MDExNTE2MjYsIm5iZiI6MCwiaWF0IjoxNTAxMTUxMzI2LCJpc3MiOiJodHRwOi8vc3NvLXJoc3NvLjUyLjE1LjEyMC4zMC54aXAuaW8vYXV0aC9yZWFsbXMvdG9tLW9hdXRoLTEiLCJhdWQiOiI2M2UzZjhjOSIsInN1YiI6IjExNzQ3NmU4LTM3NjktNGI3Ny1iNjU0LTMxZWIwMzE0MjYyNiIsInR5cCI6IkJlYXJlciIsImF6cCI6IjYzZTNmOGM5Iiwic2Vzc2lvbl9zdGF0ZSI6IjE0ZGRjNzA3LWFmZmEtNDllMi04OTIwLTU2MmU1Mjg5YTQ1ZCIsImNsaWVudF9zZXNzaW9uIjoiMjgxMjEwNDgtZmEwZS00MjlhLWE5YzctZWJlNjQ2ZTdkMmMyIiwiYWxsb3dlZC1vcmlnaW5zIjpbImh0dHBzOi8vd3d3LmdldHBvc3RtYW4uY29tIl0sInJlc291cmNlX2FjY2VzcyI6eyJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50Iiwidmlldy1wcm9maWxlIl19fSwibmFtZSI6IkNhbCBDbGllbnQiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJjYWwtY2xpZW50IiwiZ2l2ZW5fbmFtZSI6IkNhbCIsImZhbWlseV9uYW1lIjoiQ2xpZW50IiwiZW1haWwiOiJjYWwtY2xpZW50QGdtYWlsLmNvbSJ9.cshI5hhtkJ6Ne8ncXpin875IWqY2YNI_C1GbtB2F8HQ-0Pj4U8PGOMdJTicenANsDZMmaTb-v-dzioWiUn7BuLt3ynxuAF_-m4iLT6R1os4YDmJSKeP7OqoSI-zgqtLSgK3GmiZv31-hdPe4Xx_ydcR8RLZsH9s2Hxm4Cy5sMS2Z5gzrizvZMBpVlZ8OnKk9SY64cjfghW4MdLUcbByP3gToHD9ecQFG-7bkql6L5dEWv8qIU9Vm1AsHi12bFIlM5BtxAHBN1sj2mBsZN1GczEZide2moHpuR9BK2EjQFTcA0FCWmW6NOZtlsG1Y_h7h8JKlwMZHuvPKDwFJLaN6ZQ",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://apicast-rshsso.52.15.120.30.xip.io/hello",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1501152367123,
+			"name": "Echo Hello",
+			"description": "",
+			"collectionId": "eed2634b-dba0-800c-8542-79b2ed8cf362",
+			"responses": [],
+			"rawModeData": "{ \"clientId\": \"a1d412c2\", \"secret\": \"fe01249f826e4ba7df33c2dd070956e6\",\"redirectUris\":[\"https://www.getpostman.com/oauth2/callback\"] }"
+		}
+	]
+}
