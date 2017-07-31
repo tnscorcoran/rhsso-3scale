@@ -133,7 +133,7 @@ On Openshift web Console ->  Overview -> Create Route.
 Name: 		apicast-rshsso-route  
 Hostname:	apicast-rshsso.*rhel-box-ip*.xip.io  
 Leave the rest of the defaults and click Create  
-![15-create-route.png](https://raw.githubusercontent.com/tnscorcoran/rhsso-3scale/master/15-create-route.png)  
+![15-create-route.png](https://raw.githubusercontent.com/tnscorcoran/rhsso-3scale/master/15-create-rout.png)  
   
   
 6 - In Postman test Oauth flow and API with token  
