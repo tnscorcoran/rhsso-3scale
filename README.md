@@ -138,7 +138,7 @@ Leave the rest of the defaults and click Create
   
 6 - In Postman test Oauth flow and API with token  
 ==================================================================================================  
-Open Echo Hello. Set your GET URL to be http://apicast-rshsso.*rhel-box-ip*.xip.io/hello  
+Open Echo Hello. Set your GET URL to be http:// apicast-rshsso.*rhel-box-ip*.xip.io/hello  
 ![16-echo-hello-request.png](https://raw.githubusercontent.com/tnscorcoran/rhsso-3scale/master/16-echo-hello-requestt.png)  
 
 Choose Type -> Oauth 2.0
