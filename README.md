@@ -46,7 +46,7 @@ Copy your API Credentials for later. Refered to as
 ==================================================================================================
 Login to Master  
 Create a Realm for 3scale Oauth. Name it. We'll refer to it as **_3scale-oauth-realm_** 
-![6-add-realm-to-rh-sso.png](https://raw.githubusercontent.com/tnscorcoran/rhsso-3scale/master/06-add-realm-to-rh-sso.png)  
+![6-add-realm-to-rh-sso.png](https://raw.githubusercontent.com/tnscorcoran/rhsso-3scale/master/06-add-realm-to-rhsso.png)  
 Test your realm hitting it in a browser  
 http://sso-rhsso.*rhel-box-ip*.xip.io/auth/realms/**_3scale-oauth-realm_**  
   
