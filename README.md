@@ -150,7 +150,7 @@ Auth URL:			http:// apicast-rshsso.*rhel-box-ip*.xip.io/authorize
 Access Token URL:	http:// apicast-rshsso.*rhel-box-ip*.xip.io/oauth/token  
 Client ID 			*client-id*  
 Client Secret 		*client-secret*  
-![18-Postman-Request-token.png](https://raw.githubusercontent.com/tnscorcoran/rhsso-3scale/master/18-Postman-Request-tokn.png)  
+![18-Postman-Request-token.png](https://raw.githubusercontent.com/tnscorcoran/rhsso-3scale/master/18-Postman-Request-tkn.png)  
   
 Login as the user you created in RH SSO (rh-sso-user-id/rh-sso-user-password). (styling is always missing so ignore for now)  
 ![19-login-as-your-user.png](https://raw.githubusercontent.com/tnscorcoran/rhsso-3scale/master/19-login-as-your-user.png)  
