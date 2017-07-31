@@ -241,45 +241,15 @@ Valid Redirect URIs:	https://**_3scale-oauth-realm_**.3scale.net*	(your dev port
 Web Origins:			**empty**							(delete what's there)  
 ![26-modify-3scale-portal-client-on-rhsso.png](https://raw.githubusercontent.com/tnscorcoran/rhsso-3scale/master/26-modify-3scale-portal-client-on-rhsso.png)  
   
-Test it out. Go to Developer Portal -> (in a new Incognito Window) Visit Developer Portal  
-![27-dev-portal-visit-dev-portal.png](https://raw.githubusercontent.com/tnscorcoran/rhsso-3scale/master/27-dev-portal-visit-dev-portal.png)  
-
-
-
-
-
-
-
-
-
-
-********************************************************************************************************	
-******** SSO into Dev Portal
-https://tom-demo-admin.3scale.net
-Settings->Developer Portal->RH SSO
-	Client			3scale-dev-portal
-	Client secret	d5252450-76f5-4ffe-90a2-e1c6dbf5ea9b
-	Realm			http://sso-rhsso.*rhel-box-ip*.xip.io/auth/realms/tudor-realm
-	
-Initial Access Token
-	eyJhbGciOiJSUzI1NiJ9.eyJqdGkiOiJjYmNkOThlMC0yNzAzLTQ4ZTgtODc2Mi1hZTM2NzU1NmNjOTMiLCJleHAiOjE1MDIwMDg3NDQsIm5iZiI6MCwiaWF0IjoxNTAxMjMxMTQ0LCJpc3MiOiJodHRwOi8vc3NvLXJoc3NvLjUyLjE1LjEyMC4zMC54aXAuaW8vYXV0aC9yZWFsbXMvdG9tLW9hdXRoLTEiLCJhdWQiOiJodHRwOi8vc3NvLXJoc3NvLjUyLjE1LjEyMC4zMC54aXAuaW8vYXV0aC9yZWFsbXMvdG9tLW9hdXRoLTEiLCJ0eXAiOiJJbml0aWFsQWNjZXNzVG9rZW4ifQ.GNOBauH7xtWikZ4hOTSr0rHjRWtQ2oDitvcYdePoMc5thnVtcE8r_YkGJPtjK_a-GN-mnEydHZdNgJduZWy0-LCdZ40Spd3D0Nw7K_ZFCS3QlkcEmC8KL0LylqxMzCXANEEJHkT-UCzoqGyRQHiizWsKMRyBhXBoZdVl4iwecb9M2mSELx0GLxeUMW4--WVR7Nuf4WUlggDi5XJU7XqHMzoPzPYCpIvOuHTLL689j5lK6Emi6P3n4-Ipd4tQALC8Lqm9YXhcMwu55wcBGt6ix9JDiKpex5kDvXDGi9Is0DQanPL1PLkzBzDt2wcpzh5E_nRmoa0xVkbg0zZEyIAnTQ
-
-	 
-Go to the Create Client in Postman (like line 38 above) - create a client with the client id and secret and then add these
-Root URL				 https://3scale.amp.52.15.150.46.nip.io
-Valid Redirect URIs		 https://3scale.amp.52.15.150.46.nip.io*
-	
-In RHSSO, add Mappers to org_name and email like here: https://support.3scale.net/docs/developer-portal/authentication#rhsso 	
-	
-Delete any Accounts besides Demo-Org.
-
-INCOGNITO WINDOW 
-- https://tom-demo.3scale.net
-- Sign In 
-- Authenticate with Red Hat SSO
- 	rh-sso-ldap-user-id or rh-sso-user-id
-- Add Custom signup fields
-- close window
+Test it out. Go to Developer Portal -> (in a new Incognito Window) Right click Visit Developer Portal - Open an Incognito Window 
+![27-dev-portal-visit-dev-portal.png](https://raw.githubusercontent.com/tnscorcoran/rhsso-3scale/master/27-dev-portal-visit-dev-portl.png)  
+  
+  
+Sign In  
+Authenticate with Red Hat SSO  
+ 	rh-sso-ldap-user-id or rh-sso-user-id  
+Add Custom signup fields  
+Close window  
 
 3scale Admin
 - Activate Request
@@ -288,5 +258,7 @@ new	INCOGNITO WINDOW
 - https://tnscorcoran.3scale.net
 - Sign In 
 - Authenticate with Red Hat SSO
-			 
-			
+Test it out. Go to Developer Portal -> (in a new Incognito Window) Visit Developer Portal  
+![28-auth-dev-portal-with-rhsso](https://raw.githubusercontent.com/tnscorcoran/rhsso-3scale/master/28-auth-dev-portal-with-rhsso.png)  
+
+
