@@ -65,19 +65,22 @@ Save it. Your Initial Access Token will appear. Copy it, you won't be able to re
   
   
 Create a user on RH SSO. For simplicity I'll refer to as *rh-sso-user-id*.
-![10-Add-User.png](https://raw.githubusercontent.com/tnscorcoran/rhsso-3scale/master/10-Add-User.png)
+![10-Add-User.png](https://raw.githubusercontent.com/tnscorcoran/rhsso-3scale/master/10-Add-User.png)  
+
 Enter your equivalents to the following and Save:
-![11-add-user-initial-details.png](https://raw.githubusercontent.com/tnscorcoran/rhsso-3scale/master/11-add-user-initial-details.png)
+![11-add-user-initial-details.png](https://raw.githubusercontent.com/tnscorcoran/rhsso-3scale/master/11-add-user-initial-details.png)  
+
 On the Credentials tab, add New Password and Password Confirmation and reset. I'll refer to it as rh-sso-user-password
 ![12-add-credentials.png](https://raw.githubusercontent.com/tnscorcoran/rhsso-3scale/master/12-add-credentials.png)
   
   
+
 3 - Use Postman to create client on Red Hat Single Sign On
 ==================================================================================================
 In Postman, import the postman JSON *RHSSO_3scaleGist.postman_collection.json* in this repo.
 Open RH SSO Add Client request add client to Red Hat SSO (Client credentials on RHSSO need to be the same as Application Credentials set on 3scale above)
-Set the realm name in the address and the Bearer token to your *initial-access-token* retrieved above.
-![12-postman-add-client-1.png](https://raw.githubusercontent.com/tnscorcoran/rhsso-3scale/master/13-postman-add-client-1.png)
+Set the realm name in the address (to reflect *rhel-box-ip*) and the Bearer token to your *initial-access-token* retrieved above.
+![12-postman-add-cli-1.png](https://raw.githubusercontent.com/tnscorcoran/rhsso-3scale/master/13-postman-add-cli-1.png)
 Save it. 
 Switch to the Body tab. Enter the *client-id*, *client-secret* and *redirect-url* you set in 3scale above (Redirect URL is called redirectUris here)  
 ![14-Add-Client-Body.png](https://raw.githubusercontent.com/tnscorcoran/rhsso-3scale/master/14-Add-Client-Body.png)
