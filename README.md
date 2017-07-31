@@ -168,11 +168,11 @@ Return to postman and insert a random characted into the JWT and Use Token and r
   
   
 
-7 - Test your JWT on JWT.io (optional)  
+7 - Test your JWT on https://jwt.io/ (optional)  
 ==================================================================================================  
 Go to JWT.io  
-Paste into the Encoded box on the left the JWT that got inserted into the Bearer token Authorization Header after you selected Use Token.  
-On the right, you'll see some payload data representing the user and client.  
+Back in jwt.io, paste into the Encoded box on the left the JWT that got inserted into the Bearer token Authorization Header after you selected Use Token.  
+On the right, you'll see some decoded payload data representing the user and client.  
   
 Go to Red Hat SSO -> Realm Settings -> Keys  
 Copy the Public Key  
