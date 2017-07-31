@@ -1,4 +1,4 @@
-#Integrating Red Hat 3scale with Red Hat Single Sign On (SSO)
+# Integrating Red Hat 3scale with Red Hat Single Sign On (SSO)
 
 Prerequisites
 ==================================================================================================
