@@ -83,7 +83,7 @@ Set the realm name in the address (to reflect *rhel-box-ip*) and the Bearer toke
 ![12-postman-add-cli-1.png](https://raw.githubusercontent.com/tnscorcoran/rhsso-3scale/master/13-postman-add-cli-1.png)
 Save it. 
 Switch to the Body tab. Enter the *client-id*, *client-secret* and *redirect-url* you set in 3scale above (Redirect URL is called redirectUris here)  
-![14-Add-Client-Body.png](https://raw.githubusercontent.com/tnscorcoran/rhsso-3scale/master/14-Add-Client-Body.png)
+![14-Add-Client-Body.png](https://raw.githubusercontent.com/tnscorcoran/rhsso-3scale/master/14-Add-Client-Bdy.png)
   
 Save and Send it. You should get back some JSON and 201 created HTTP status.  
   
