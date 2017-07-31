@@ -93,7 +93,7 @@ Save and Send it. You should get back some JSON and 201 created HTTP status.
 ==================================================================================================
 In Red Hat SSO, click on the Clients view on the Left hand side. Select your new client (*client-id*)  
 Assuming you want to give the user ability to grant access to the Application to access their data (we do), click Consent Required. Save  
-![14-update-client-in-rhsso.png](https://raw.githubusercontent.com/tnscorcoran/rhsso-3scale/master/14-update-client-in-rhsso.png)  
+![14-update-client-in-rhsso.png](https://raw.githubusercontent.com/tnscorcoran/rhsso-3scale/master/14-update-client-in-rh-sso.png)  
   
   
 5 - Setup your API Gateway on Openshift  
