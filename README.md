@@ -6,11 +6,11 @@ Your AWS box IP 52.15.120.30
 
 1 - Setup your 3scale Account
 ==================================================================================================
-Go to API - Integration and click *add the base URL of your API and save the Configuration*  
+Go to API - Integration and click *edit integration settings*  
 ![Edit integration settings](https://raw.githubusercontent.com/tnscorcoran/rhsso-3scale/master/01%20edit%20integration%20settings.png)
-For GATEWAY, choose APICast Self Managed. For AUTHENTICATION choose Oauth 2.0.
-Update Service
+For GATEWAY, *choose APICast Self Managed*. For AUTHENTICATION choose *Oauth 2.0*. Then click Update Service  
 
+Click *add the base URL of your API and save the Configuration*  
 Click *Add the base URL of your API*
 Keep *Private Base URL* as it is
 Set your *Staging Public Base URL* and *Production Public Base URL* both to be http://apicast-rshsso.52.15.120.30.xip.io
