@@ -225,7 +225,7 @@ Click on Red Hat Single Sign On. Enter the following (or your desired values)
   
 While we're in 3scale we're going to remove the secret access key for easier access (for illustration only - we would normally keep it there until  our Dev Portal is ready to go live)  
 In 3scale go to Settings -> Developer Portal. Delete the Developer Portal Access Code and Update Account.   
-![25-remove-portal-access-key.png](https://raw.githubusercontent.com/tnscorcoran/rhsso-3scale/master/25-remove-portal-access-key.png)  
+![25-remove-portal-access-key.png](https://raw.githubusercontent.com/tnscorcoran/rhsso-3scale/master/25-remove-portal-access-keey.png)  
   
 Next we need to add a client to your Realm in Red Hat SSO that aligns with your Dev Portal Oauth client to 3scale.  
 Open Postman and repeat the steps on line 66 above, replacing the data elements in the request JSON body with these (or your equivalents):  
