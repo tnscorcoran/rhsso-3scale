@@ -28,7 +28,7 @@ Go to API -> Integration. Click Promote v._x_ to Production
 ![promote-to-production](https://raw.githubusercontent.com/tnscorcoran/rhsso-3scale/master/03-promote-to-prod.png)
   
 Choose Developers - Account Developer - 1 Application  
-![developer-application](https://raw.githubusercontent.com/tnscorcoran/rhsso-3scale/master/04-open-developer-application.png)
+![developer-application](https://raw.githubusercontent.com/tnscorcoran/rhsso-3scale/master/04-open-developer-appl.png)
 
 Open your only Application (or choose one in your Oauth API if you have more)
 ![set-application-details](https://raw.githubusercontent.com/tnscorcoran/rhsso-3scale/master/04-set%20your-3scale%20app-details.png)
