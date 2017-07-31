@@ -1,8 +1,8 @@
 PreRequisites
 ==================================================================================================
-Access to 3scale Account
-Access to Red Hat SSO On Openshift
-Your AWS box IP 52.15.120.30
+Access to 3scale Account  
+Access to Red Hat SSO On Openshift  
+Your AWS box IP 52.15.120.30  
 
 1 - Setup your 3scale Account
 ==================================================================================================
