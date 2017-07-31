@@ -168,10 +168,10 @@ Return to postman and insert a random characted into the JWT and Use Token and r
   
   
 
-7 - Test your JWT on https://jwt.io/ (optional)  
+7 - Test your JWT on https://jwt.io (optional)  
 ==================================================================================================  
-Go to JWT.io  
-Back in jwt.io, paste into the Encoded box on the left the JWT that got inserted into the Bearer token Authorization Header after you selected Use Token.  
+Go to https://jwt.io  
+Paste into the Encoded box on the left the JWT that got inserted into the Bearer token Authorization Header after you selected Use Token.  
 On the right, you'll see some decoded payload data representing the user and client.  
   
 Go to Red Hat SSO -> Realm Settings -> Keys  
@@ -182,7 +182,7 @@ Insert Public Key as follows:
 **_public key goes here_**
 -----END PUBLIC KEY-----
 			
-Paste this into the Public Key or Certificate box on the right and the red Invalid Signature banner should turn to a blue *Signature verified* one.
+Back in jwt.io, paste this into the Public Key or Certificate box on the right and the red Invalid Signature banner should turn to a blue *Signature verified* one.
 Alter either the payload or the public key and signature validation will fail. This simulates the signature validation that hapeens on the gateway.
   
   
