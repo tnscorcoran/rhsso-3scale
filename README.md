@@ -22,7 +22,7 @@ Set your *Staging Public Base URL* and *Production Public Base URL* both to be h
 Click *Update the Staging Envirnonment*
 ![public-base-urls](https://raw.githubusercontent.com/tnscorcoran/rhsso-3scale/master/03%20Set%20Public%20Base%20URLs.png)
 Set your credentials location to Headers:  
-![update-credentials-location-headers](https://raw.githubusercontent.com/tnscorcoran/rhsso-3scale/master/03-update-credentials-location-headers.png.png)
+![update-credentials-location-headers](https://raw.githubusercontent.com/tnscorcoran/rhsso-3scale/master/03-update-credentials-location-headers.png)
   
 Go to API -> Integration. Click Promote v._x_ to Production
 ![promote-to-production](https://raw.githubusercontent.com/tnscorcoran/rhsso-3scale/master/03-promote-to-production.png)
