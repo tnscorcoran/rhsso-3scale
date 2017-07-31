@@ -139,18 +139,18 @@ Leave the rest of the defaults and click Create
 6 - In Postman test Oauth flow and API with token  
 ==================================================================================================  
 Open Echo Hello. Set your GET URL to be http://apicast-rshsso.*rhel-box-ip*.xip.io/hello  
-![16-echo-hello-request.png](https://raw.githubusercontent.com/tnscorcoran/rhsso-3scale/master/16-echo-hello-request.png)  
+![16-echo-hello-request.png](https://raw.githubusercontent.com/tnscorcoran/rhsso-3scale/master/16-echo-hello-requestt.png)  
 
 Choose Type -> Oauth 2.0
-![17-type-Oauth2.0.png](https://raw.githubusercontent.com/tnscorcoran/rhsso-3scale/master/17-type-Oauth2.0.png)  
+![17-type-Oauth2.0.png](https://raw.githubusercontent.com/tnscorcoran/rhsso-3scale/master/17-type-Oauth20.png)  
   
 Set these parameters and  
 Click Get New Access Token orange button  
-Auth URL:			http://apicast-rshsso.*rhel-box-ip*.xip.io/authorize  
-Access Token URL:	http://apicast-rshsso.*rhel-box-ip*.xip.io/oauth/token  
+Auth URL:			http:// apicast-rshsso.*rhel-box-ip*.xip.io/authorize  
+Access Token URL:	http:// apicast-rshsso.*rhel-box-ip*.xip.io/oauth/token  
 Client ID 			*client-id*  
 Client Secret 		*client-secret*  
-![18-Postman-Request-token.png](https://raw.githubusercontent.com/tnscorcoran/rhsso-3scale/master/18-Postman-Request-token.png)  
+![18-Postman-Request-token.png](https://raw.githubusercontent.com/tnscorcoran/rhsso-3scale/master/18-Postman-Request-tokn.png)  
   
 Login as the user you created in RH SSO (rh-sso-user-id/rh-sso-user-password). (styling is always missing so ignore for now)  
 ![19-login-as-your-user.png](https://raw.githubusercontent.com/tnscorcoran/rhsso-3scale/master/19-login-as-your-user.png)  
@@ -158,7 +158,7 @@ After authentication, you'll be prompted to create a new Password. Do this.
   
 A Token (RHSSO Get Token) will be returned to Postman. Click it then click Use Token.  
 Click Save then click Send.  
-![20-use-token-save-send.png](https://raw.githubusercontent.com/tnscorcoran/rhsso-3scale/master/20-use-token-save-send.png)  
+![20-use-token-save-send.png](https://raw.githubusercontent.com/tnscorcoran/rhsso-3scale/master/20-use-token-savesend.png)  
 
 Go to your 3scale Analytics. Your counts should increment with each call.
 ![3scale-analytics](https://raw.githubusercontent.com/tnscorcoran/rhsso-3scale/master/21-3scale-analytics.png)  
