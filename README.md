@@ -44,7 +44,7 @@ Copy your API Credentials for later. Refered to as
 *redirect-url*  
   
   
-
+  
 Next, get your 3scale Access token (used to create gateway). Go to Gear sign - Personal Settings - Tokens  
 ![05-threescale-accesstoken-1.png](https://raw.githubusercontent.com/tnscorcoran/rhsso-3scale/master/05-threescale-accesstoken-1.png)
   
