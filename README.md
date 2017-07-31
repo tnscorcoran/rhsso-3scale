@@ -64,7 +64,7 @@ Set your expiration and count to be non zero values.
 Save it. Your Initial Access Token will appear. Copy it, you won't be able to retrieve it again. We'll refer to it as your *initial-access-token*
   
   
-Create a user on RH SSO. For simplicity I'll refer to as rh-sso-user-id.
+Create a user on RH SSO. For simplicity I'll refer to as *rh-sso-user-id*.
 ![10-Add-User.png](https://raw.githubusercontent.com/tnscorcoran/rhsso-3scale/master/10-Add-User.png)
 Enter something like the following and Save:
 ![11-add-user-initial-details.png](https://raw.githubusercontent.com/tnscorcoran/rhsso-3scale/master/11-add-user-initial-details.png)
