@@ -36,7 +36,7 @@ Choose Developers - Account Developer - 1 Application
 
 Open your only Application (or choose one in your Oauth API if you have more)
 ![set-application-details](https://raw.githubusercontent.com/tnscorcoran/rhsso-3scale/master/04-set%20your-3scale%20app-details.png)
-Add Random Key
+Add Random Key  
 Set your Redirect URL to be https://www.getpostman.com/oauth2/callback
 ![application-details](https://raw.githubusercontent.com/tnscorcoran/rhsso-3scale/master/05-get-your-3scale%20application-details.png)
 Copy your API Credentials for later. Refered to as  
