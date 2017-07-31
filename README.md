@@ -191,7 +191,7 @@ Alter either the payload or the public key and signature validation will fail. T
 Go to: User Federation -> Add Provider -> ldap
 ![22-choose-ldap.png](https://raw.githubusercontent.com/tnscorcoran/rhsso-3scale/master/22-choose-ldap.png)
 
-Enter the following, testing connection and authentication as you go then Save:
+Enter the following (or your equivalents), testing connection and authentication as you go then Save:
 --------------------
 Console Display Name:	open-ldap  
 Priority				1  
