@@ -73,25 +73,29 @@ Use Postman to create client on Red Hat Single Sign On
 ==================================================================================================
 In Postman, import the postman JSON *RHSSO_3scaleGist.postman_collection.json* in this repo.
 Open RH SSO Add Client request add client to Red Hat SSO (Client credentials on RHSSO need to be the same as Application Credentials set on 3scale above)
-Set the realm name in the address and the Bearer token to your Initial Access Token retrieved above.
-[12-postman-add-client-1.png]
+Set the realm name in the address and the Bearer token to your *initial-access-token* retrieved above.
+![12-postman-add-client-1.png](https://raw.githubusercontent.com/tnscorcoran/rhsso-3scale/master/13-postman-add-client-1.png)
 Save it. 
-Switch to the Body tab. Enter the clientId, secret and URL you set in 3scale above (Redirect URL is called redirectUris here)
-[14-Add-Client-Body.png]
-Save and Send it. You should get back some JSON and 201 created HTTP status.
+Switch to the Body tab. Enter the *client-id*, *client-secret* and *redirect-url* you set in 3scale above (Redirect URL is called redirectUris here)  
+![14-Add-Client-Body.png](https://raw.githubusercontent.com/tnscorcoran/rhsso-3scale/master/14-Add-Client-Body.png)
+  
+Save and Send it. You should get back some JSON and 201 created HTTP status.  
+  
 
-2 Check and Update your Client in Red Hat SSO
+
+2 Check and Update your Client in Red Hat SSO  
 ==================================================================================================
-In Red Hat SSO, click on the Clients view on the Left hand side. Select your new client (*client-id*)
-Assuming you want to give the user ability to grant access to the Application to access their data (we do), click Consent Required. Save
-[14-update-client-in-rhsso.png]
-
-
-Setup your API Gateway on Openshift
+In Red Hat SSO, click on the Clients view on the Left hand side. Select your new client (*client-id*)  
+Assuming you want to give the user ability to grant access to the Application to access their data (we do), click Consent Required. Save  
+![14-update-client-in-rhsso.png](https://raw.githubusercontent.com/tnscorcoran/rhsso-3scale/master/14-update-client-in-rhsso.png)  
+  
+  
+Setup your API Gateway on Openshift  
 ==================================================================================================
 Login to Openshift and make the following commands
 oc login 
-	(use credentials developer/developer)
+	(default credentials are developer/developer)  
+Create your project, e.g. with something like these values:  
 oc new-project "3scalegateway-**_3scale-oauth-realm_**" --display-name="3scalegateway-**_3scale-oauth-realm_**" --description="3scalegateway-**_3scale-oauth-realm_**"
 
 oc secret new-basicauth apicast-configuration-url-secret --password=https://9800f60ff34d25e7bc5b22c25287e94da130f6fb0fe9b77c05bd6a6d993b0614@**_3scale-oauth-realm_**-admin.3scale.net
