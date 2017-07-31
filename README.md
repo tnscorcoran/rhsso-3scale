@@ -4,16 +4,15 @@ Access to 3scale Account
 Access to Red Hat SSO On Openshift
 Your AWS box IP 52.15.120.30
 
-1 Setup your 3scale Account
+1 - Setup your 3scale Account
 ==================================================================================================
 ![Edit integration settings](https://raw.githubusercontent.com/tnscorcoran/rhsso-3scale/master/01%20edit%20integration%20settings.png)
 For GATEWAY, choose APICast Self Managed. For AUTHENTICATION choose Oauth 2.0.
 Update Service
 
-Click
-[2 Add the base URL of your API]
-Keep Private Base URL* as it is
-Set your Staging Public Base URL and Production Public Base URL both to be http://apicast-rshsso.52.15.120.30.xip.io
+Click *Add the base URL of your API*
+Keep *Private Base URL* as it is
+Set your *Staging Public Base URL* and *Production Public Base URL* both to be http://apicast-rshsso.52.15.120.30.xip.io
 Update the Staging Envirnonment
 [3 Set Public Base URLs.png]
 Set your credentials location to Headers:
