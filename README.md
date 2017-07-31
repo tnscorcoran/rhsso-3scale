@@ -4,7 +4,7 @@
 Access to a 3scale Account  
 Access to a Red Hat SSO installation  
 An API client. We assume it to be Postman client for Chrome  
-Your RHEL box IP, refered to *rhel-box-ip*  
+Your RHEL box IP, refered to *rhel-box-ip*. We assume RHSSO and 3scale on Prem are runnning on the same RHEL box with this IP. (If not substitute as appropriate below).  
   
 
 Note: We have inserted whitespace in some URLs as they contain placeholders and are not valid URLs as they appear. Insert the values resolving to the URL fragments and remove whitespace.  
