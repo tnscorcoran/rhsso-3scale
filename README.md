@@ -8,17 +8,21 @@ Your AWS box IP 52.15.120.30
 ==================================================================================================
 Go to API - Integration and click *edit integration settings*  
 ![Edit integration settings](https://raw.githubusercontent.com/tnscorcoran/rhsso-3scale/master/01%20edit%20integration%20settings.png)
+  
+  
 For GATEWAY, *choose APICast Self Managed*. For AUTHENTICATION choose *Oauth 2.0*. Then click Update Service  
 ![](https://raw.githubusercontent.com/tnscorcoran/rhsso-3scale/master/01-2-edit-integration-settings-details.png)  
+  
+  
+![](https://raw.githubusercontent.com/tnscorcoran/rhsso-3scale/master/02%20Add%20the%20base%20URL%20of%20your%20API.png)  
 Click *add the base URL of your API and save the Configuration*  
-Click *Add the base URL of your API*
 Keep *Private Base URL* as it is
 Set your *Staging Public Base URL* and *Production Public Base URL* both to be http://apicast-rshsso.52.15.120.30.xip.io
 Update the Staging Envirnonment
 [3 Set Public Base URLs.png]
 Set your credentials location to Headers:
 [3-update-credentials-location-headers.png]
-
+  
 Go to API -> Integration. Click Promote v.<x> to Production
 [3-promote-to-production.png]
 
