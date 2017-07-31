@@ -6,7 +6,7 @@ Your AWS box IP 52.15.120.30
 
 1 Setup your 3scale Account
 ==================================================================================================
-[Edit integration settings](https://github.com/tnscorcoran/rhsso-3scale/blob/master/01%20edit%20integration%20settings.png)
+[Edit integration settings](https://raw.githubusercontent.com/tnscorcoran/rhsso-3scale/master/01%20edit%20integration%20settings.png)
 For GATEWAY, choose APICast Self Managed. For AUTHENTICATION choose Oauth 2.0.
 Update Service
 
