@@ -124,7 +124,7 @@ oc new-app -f https://raw.githubusercontent.com/3scale/3scale-amp-openshift-temp
 Your gateway will deploy in a couple of minutes.  
 **TIP** Scale it down to 1 Pod - that way if you want to look up logs, they can only be in the remaining Pod.  
   
-Open web Console https://ec2-52-15-120-30.us-east-2.compute.amazonaws.com:8443 and open 3scalegateway-**_3scale-oauth-realm_**  
+Open web Console https:// *openshift-host* :8443 and open 3scalegateway-**_3scale-oauth-realm_**  
 Go to Applications -> Deployments -> apicast -> Environment  
 Add this ENV variable: RHSSO_ENDPOINT and set it to: http://sso-rhsso.*rhel-box-ip*.xip.io/auth/realms/**_3scale-oauth-realm_**  
 Save  
