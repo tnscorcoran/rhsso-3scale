@@ -29,7 +29,7 @@ Set your credentials location to Headers:
 ![update-credentials-location-headers](https://raw.githubusercontent.com/tnscorcoran/rhsso-3scale/master/03-update-credentials-location-headerz.png)
   
 Go to API -> Integration. Click Promote v._x_ to Production
-![promote-to-production](https://raw.githubusercontent.com/tnscorcoran/rhsso-3scale/master/03-promote-to-prodn.png)
+![promote-to-production](https://raw.githubusercontent.com/tnscorcoran/rhsso-3scale/master/03-promote-toprodn.png)
   
 Choose Developers - Account Developer - 1 Application  
 ![developer-application](https://raw.githubusercontent.com/tnscorcoran/rhsso-3scale/master/04-open-developer-appl.png)
