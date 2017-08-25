@@ -119,7 +119,7 @@ oc login
 Create your project, e.g. with something like these values:  
 oc new-project "3scalegateway-**_3scale-oauth-realm_**" --display-name="3scalegateway-**_3scale-oauth-realm_**" --description="3scalegateway-**_3scale-oauth-realm_**"   (replacing **_3scale-oauth-realm_** with your realm name) 
   
-oc secret new-basicauth apicast-configuration-url-secret --password=https:// *3scale-access-token* @ **_3scale-oauth-realm_**-admin.3scale.net (remove whitespace,  eeplacing **_3scale-oauth-realm_** with your realm name)    
+oc secret new-basicauth apicast-configuration-url-secret --password=https:// *3scale-access-token* @ **_3scale-domain_** (remove whitespace,  replacing **_3scale-domain_** with the URL to your SaaS on On Prem 3scale API Manager)    
   
 oc new-app -f https://raw.githubusercontent.com/3scale/3scale-amp-openshift-templates/2.0.0.GA-redhat-2/apicast-gateway/apicast.yml  
   
